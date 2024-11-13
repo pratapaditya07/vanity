@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Dynalight&family=Fleur+De+Leah&family=Hurricane&family=Imperial+Script&family=Italianno&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 700%;
+    background-color: #FFFEFE;
+    color: #0C0C0C;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    height: 100vh;
+}
+
+body-scroll {
+    scroll-snap-type: x mandatory; /* Snap scrolling horizontally */
+  }
+  
+body-scroll section {
+    scroll-snap-align: start; /* Snap each section to the start */
+  }
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+#nav{
+    height: 4vw;
+    display: flex;
+    gap: 40.5vw;
+    align-items: center;
+    /* background-color: greenyellow; */
+    padding: 0vw 2.5vw;
+    position: absolute;
+
+}
+
+#nav-left{
+    height: 3vw;
+    width: 3vw;
+    text-align: center;
+    padding-top: 0.5vw;
+    padding-left: -0.5vw;
+    font-family: 'Fleur De Leah', cursive;
+    font-weight: 900;
+    font-size: 1.5vw;
+    color: #FFFEFE;
+    background-color: #272727;
+    border-radius: 50%;
+}
+
+#nav-right{
+    display: flex;
+    width: 52vw;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#nav-right i{
+    cursor: pointer;
+}
+#nav-right p{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+#nav-right p:hover{
+    animation-name: underline;
+    animation-duration: 50ms;
+    cursor: pointer;
+}
+
+@keyframes underline {
+    0%{
+        border-bottom: 2px solid #0C0C0C;
+        scale: 0;
+    }
+    100%{
+        border-bottom: 2px solid #0c0c0c;
+        scale: 1;
+    }
+}
+
+/* #nav-right p:nth-child(1){
+    color: #FFFEFE;
+} */
+
+#pg1{
+    height:100%;
+    width: 100vw;
+    display: flex;
+}
+
+#pg1-left{
+    width: 64vw;
+    background-color: green;
+    background-image: url(/media/qq.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+#pg1-right{
+    margin-top: 4vw;
+    height: 100vh;
+    width: 55vw;
+/*     background-color: antiquewhite; */
+    position: absolute;
+    left: 7%;
+    transition: all 0.3s ease-in-out;
+}
+
+#octagon{
+    height: 7vw;
+    width: 7vw;
+    color: #FFFEFE;
+    background-color: #0C0C0C;
+    margin: 4vw 5vw 0vw 37vw;
+    text-align: center;
+    padding-top: 2.3vw;
+    font-family: "clash display", sans-serif;
+    border-radius: 50%;
+    scale: 1;
+}
+
+#octagon:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+#pg1-right h6{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 1vw;
+    letter-spacing: 3vw;
+    margin: 4vw 0vw 0vw 6vw;
+}
+
+#pg1-right h1{
+    font-family:'Gambarino', sans-serif;
+    font-weight: 400;
+    font-size: 12vw;
+    line-height: 10vw;
+    letter-spacing: 1vw;
+}
+
+#pg1-right h2{
+    font-family:'clash display', sans-serif;
+    margin-top: 0.7vw;
+    margin-left: 30vw;
+}
+
+
+#pg2{
+    height: 100vh;
+    width: 100vw;
+    background-color: green;
+}
