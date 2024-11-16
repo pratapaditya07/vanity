@@ -33,6 +33,7 @@ body::-webkit-scrollbar{
     display: none;
 }
 
+
 #nav{
     height: 4vw;
     display: flex;
@@ -49,10 +50,9 @@ body::-webkit-scrollbar{
     width: 3vw;
     text-align: center;
     padding-top: 0.5vw;
-    padding-left: -0.5vw;
     font-family: 'Fleur De Leah', cursive;
-    font-weight: 900;
-    font-size: 1.5vw;
+    font-weight: 500;
+    font-size: 1.7vw;
     color: #FFFEFE;
     background-color: #272727;
     border-radius: 50%;
@@ -63,50 +63,42 @@ body::-webkit-scrollbar{
     width: 52vw;
     align-items: center;
     justify-content: space-between;
-
 }
 
 #nav-right i{
     cursor: pointer;
+    font-size: 1.4vw;
 }
 #nav-right p{
-    font-family: sans-serif;
-    font-weight: 500;
+    font-family: "clash display", sans-serif;
+    font-weight: 600;
     font-size: 1vw;
     cursor: pointer;
 }
 
-#nav-right p:hover{
-    animation-name: underline;
-    animation-duration: 50ms;
-    cursor: pointer;
+#nav-right p::after{
+    content: "";
+    display: block;
+    width: 100%;
+    background-color: #0c0c0c;
+    height: 2px;
+    transform: scale(0);
+    transition: all 0.3s ease-in-out;
 }
 
-@keyframes underline {
-    0%{
-        border-bottom: 2px solid #0C0C0C;
-        scale: 0;
-    }
-    100%{
-        border-bottom: 2px solid #0c0c0c;
-        scale: 1;
-    }
+#nav-right p:hover::after{
+    transform: scale(1);
 }
-
-/* #nav-right p:nth-child(1){
-    color: #FFFEFE;
-} */
 
 #pg1{
     height:100%;
     width: 100vw;
     display: flex;
-    border-right: 2px solid rgb(92, 211, 92);
+    border-right: 2px solid gray;
 }
 
 #pg1-left{
     width: 64vw;
-    background-color: green;
     background-image: url(/media/qq.jpg);
     background-repeat: no-repeat;
     background-position: top;
@@ -251,6 +243,7 @@ body::-webkit-scrollbar{
     font-family:'clash display', sans-serif;
     letter-spacing: 0.25vw;
 }
+
 #small{
     font-size: 10vw;
     letter-spacing: 0vw;
@@ -497,16 +490,22 @@ body::-webkit-scrollbar{
 #footer{
     height: 100vh;
     width: 33.1vw;
-    border: 2px solid black;
-    margin-top: 5vw;
+    background-image: url(/media/qqqq.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+#footup{
+    height: 3vw;
+    width: 100%;
+    background-color: white;
 }
 
 #foo{
-    height: 25vw;
     width: 100%;
-    margin-top: 80%;
-    background-color: aquamarine;
-    padding-left: 2vw;
+    margin-top: 85%;
+    text-align: center;
 }
 
 #foo>h1{
@@ -515,4 +514,38 @@ body::-webkit-scrollbar{
     font-size: 2vw;
     letter-spacing: 0.1vw;
     margin-top: 5vw;
+    line-height: 2.2vw;
+    background-color: #939393;
 }
+
+#italia{
+    font-family: 'Italianno', cursive;
+    font-size: 3vw;
+    margin-top: 1vw;    
+}
+
+#email{
+    height: 15vw;
+    font-family: "clash display", sans-serif;
+    font-weight: 600;
+    padding: 1.5vw;
+}
+
+#email>input{
+    height: 3vw;
+    width: 100%;
+    margin-bottom: 1vw;
+    padding-left: 1vw;
+    border: none;   
+    border-radius: 5px;
+    background-color: #FFFEFE;
+}           
+
+#email>button{
+    height: 3vw;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #0C0C0C;
+    color: #FFFEFE;
+}       
